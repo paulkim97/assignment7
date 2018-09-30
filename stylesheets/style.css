@@ -1,0 +1,120 @@
+body{
+	background: linear-gradient(to right, #D2691E, #CD853F, #f2c993, #FFE4C4, #D2B48C, #CD853F, #D2691E) fixed; 
+	font-family: Helvetica;
+	background-size: cover;
+	height: 100%;
+	text-align: center;	
+}
+.head{
+	background: linear-gradient(315deg, #D2691E, #CD853F, #f2c993, #FFE4C4, #D2B48C, #CD853F, #D2691E); 
+	border: 5px #111111 solid;
+	font-size: 50px;
+	font-weight: bold;
+	display: inline-block;
+}
+.bigcontainer1, .bigcontainer2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+@keyframes move {
+    0%	 {top:0px; left:0px;}
+    50%  {top:0px; left:20px;}
+    100% {top:0px; left:0px;}
+
+}
+.btn{
+	width:200px;
+	height:200px;
+	border-radius: 50%;
+	text-align: center;
+	border:5px solid #111111;
+	position: relative;
+	display: inline-block;
+	transition: opacity 1s;
+}
+
+.gold, .g{
+	background-color: gold;
+}
+.samo, .s{
+	background: linear-gradient(white 50%, green 50%, green);
+}
+.fren, .f{
+	background: linear-gradient(90deg, blue 33.3%, white 33.33%, white 66.66%, red 66.66%, red);
+}
+.pome, .p{
+	background-color: #8b4513;
+}
+.york, .y{
+	background: repeating-linear-gradient(180deg, #111111 25%, gold 50%, #111111 75%);
+}
+.bern, .b{
+	background-color: red;
+}
+.dogname{
+	display: inline-block;
+	border: 5px #111111 solid;
+	width:150px;
+	background: linear-gradient(315deg, #D2691E, #CD853F, #f2c993, #FFE4C4, #D2B48C, #CD853F, #D2691E); 
+	text-align: center; 	
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight:bold;
+	position: absolute;
+	top:50%;
+	left:50%;
+	z-index: 2;
+	transform: translate(-50%,-50%);
+}
+.flag1{
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #fdf9f3;
+	width:170px;
+	height:70px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate( -50%,-50%);
+	z-index: 1;
+}
+.flag2{
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #fdf9f3;
+	width:70px;
+	height: 170px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate( -50%,-50%);
+	z-index:1;
+}
+img{
+	border: 5px #111111 solid;
+	border-radius: 50%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: -1;
+	transition: opacity 1s;
+
+}
+.container{
+	position: relative;
+	display: inline-block;
+	margin:50px;
+	width: 200px;
+	height: 200px;
+	animation:move .7s infinite;
+}
+.container:hover > .btn{
+	opacity:0;
+}
+.container:hover > img{
+	opacity: 1
+}
+
